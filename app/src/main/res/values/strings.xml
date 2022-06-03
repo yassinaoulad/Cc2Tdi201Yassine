@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Cc2Tdi201Yassine</string>
+
+    <string name="ajousoc">Ajouter une societe</string>
+    <string name="editsoc">Editer une societe</string>
+    <string name="listsoc">Liste de tous les societes</string>
+
+
 </resources>
