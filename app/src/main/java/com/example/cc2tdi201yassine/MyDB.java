@@ -30,12 +30,21 @@ public class MyDB extends SQLiteOpenHelper {
 
     public static long addSociete(SQLiteDatabase sqLiteDatabase, Societe s){
         ContentValues cv = new ContentValues();
-        cv.put(col1,s.getID());
         cv.put(col2,s.getNom());
         cv.put(col3,s.getSecteur_activite());
         cv.put(col4,s.getNombre_employe());
         return sqLiteDatabase.insert(TABLE_NAME,null,cv);
     }
+
+    public static long updateSociete(SQLiteDatabase sqLiteDatabase, Societe s){
+        ContentValues cv = new ContentValues();
+        cv.put(col2,s.getNom());
+        cv.put(col3,s.getSecteur_activite());
+        cv.put(col4,s.getNombre_employe());
+        return sqLiteDatabase.update(TABLE_NAME,cv,"id="+s.getID(),null);
+    }
+
+
 
 
 
