@@ -9,19 +9,19 @@
     tools:context=".MainActivity">
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/btnMenu"
         android:text="@string/ajousoc"
+        android:background="@drawable/blue_button"
         />
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/btnMenu"
         android:text="@string/editsoc"
+        android:background="@drawable/blue_button"
         />
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/btnMenu"
         android:text="@string/listsoc"
+        android:background="@drawable/blue_button"
         />
 
 </LinearLayout>
