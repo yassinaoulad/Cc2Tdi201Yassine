@@ -41,7 +41,11 @@ public class MyDB extends SQLiteOpenHelper {
         cv.put(col2,s.getNom());
         cv.put(col3,s.getSecteur_activite());
         cv.put(col4,s.getNombre_employe());
-        return sqLiteDatabase.update(TABLE_NAME,cv,"id="+s.getID(),null);
+        return sqLiteDatabase.update(TABLE_NAME,cv,"ID="+s.getID(),null);
+    }
+
+    public static long deleteSociete(SQLiteDatabase sqLiteDatabase, int id){
+        return sqLiteDatabase.delete(TABLE_NAME,"ID="+id,null);
     }
 
 
