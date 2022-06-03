@@ -10,24 +10,24 @@
     <EditText
         android:id="@+id/txtInputNom"
         style="@style/ediTxtStyle"
+        android:layout_alignParentTop="true"
         android:inputType="text"
         android:textSize="30sp"
-        android:layout_alignParentTop="true"
-        />
+        android:hint="Entre le nom de la societe"/>
     <EditText
         android:id="@+id/txtInputSecteur"
         style="@style/ediTxtStyle"
         android:inputType="text"
         android:textSize="30sp"
         android:layout_below="@+id/txtInputNom"
-        />
+        android:hint="Entre le secteur"/>
     <EditText
         android:id="@+id/txtInputNbEmpl"
         style="@style/ediTxtStyle"
         android:inputType="number"
         android:textSize="30sp"
         android:layout_below="@+id/txtInputSecteur"
-        />
+        android:hint="Entre le nombre employe"/>
 
     <Button
         android:id="@+id/btnEnreg"
