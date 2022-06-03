@@ -69,6 +69,21 @@ public class MyDB extends SQLiteOpenHelper {
     }
 
 
+    public static Societe getOneSociete(SQLiteDatabase sqLiteDatabase, int id){
+        Societe s = null;
+
+        Cursor cur = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE ID = " + id,null);
+
+        if(cur.moveToNext()){
+            s = new Societe();
+            s.setID(cur.getInt(0));
+            s.setNom(cur.getString(1));
+            s.setSecteur_activite(cur.getString(2));
+            s.setNombre_employe(cur.getInt(3));
+        }
+
+        return s;
+    }
 
 
 
