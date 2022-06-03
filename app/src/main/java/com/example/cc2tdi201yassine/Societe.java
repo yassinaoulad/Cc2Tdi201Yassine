@@ -1,6 +1,8 @@
 package com.example.cc2tdi201yassine;
 
-public class Societe {
+import java.io.Serializable;
+
+public class Societe implements Serializable {
 
     public int getID() {
         return ID;
@@ -43,6 +45,12 @@ public class Societe {
 
 
     public Societe() {
+    }
+
+    public Societe(String nom, String secteur_activite, int nombre_employe) {
+        Nom = nom;
+        Secteur_activite = secteur_activite;
+        Nombre_employe = nombre_employe;
     }
 
     public Societe(int ID, String nom, String secteur_activite, int nombre_employe) {

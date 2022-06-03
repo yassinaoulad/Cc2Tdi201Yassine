@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ajouter_soc">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/txtInputNom"
+        style="@style/ediTxtStyle"
+        android:inputType="text"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        />
+    <EditText
+        android:id="@+id/txtInputSecteur"
+        style="@style/ediTxtStyle"
+        android:inputType="text"
+        android:textSize="30sp"
+        android:layout_below="@+id/txtInputNom"
+        />
+    <EditText
+        android:id="@+id/txtInputNbEmpl"
+        style="@style/ediTxtStyle"
+        android:inputType="number"
+        android:textSize="30sp"
+        android:layout_below="@+id/txtInputSecteur"
+        />
+
+    <Button
+        android:id="@+id/btnEnreg"
+        style="@style/btnOtherAct"
+        android:layout_below="@id/txtInputNbEmpl"
+        android:text="@string/btnEnreg" />
+
+    <Button
+        android:id="@+id/btn_cancelNewS"
+        style="@style/btnOtherAct"
+        android:layout_alignBaseline="@id/btnEnreg"
+        android:layout_toRightOf="@id/btnEnreg"
+        android:text="@string/btnCancel"
+        android:onClick="btnCancel"/>
+
+</RelativeLayout>

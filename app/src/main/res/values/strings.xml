@@ -6,4 +6,8 @@
     <string name="listsoc">Liste de tous les societes</string>
 
 
+    <string name="btnEnreg">ENREGISTRER</string>
+    <string name="btnCancel">ANNULER</string>
+
+
 </resources>
