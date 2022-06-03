@@ -12,16 +12,19 @@
         style="@style/btnMenu"
         android:text="@string/ajousoc"
         android:background="@drawable/blue_button"
-        />
+        android:id="@+id/btnAjoSoc"
+        android:onClick="btnMainActClick" />
     <Button
         style="@style/btnMenu"
         android:text="@string/editsoc"
         android:background="@drawable/blue_button"
-        />
+        android:id="@+id/btnEditSic"
+        android:onClick="btnMainActClick"/>
     <Button
         style="@style/btnMenu"
         android:text="@string/listsoc"
         android:background="@drawable/blue_button"
-        />
+        android:id="@+id/btnListSoc"
+        android:onClick="btnMainActClick"/>
 
 </LinearLayout>
